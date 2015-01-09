@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!--Container-->
+  <div id="container">
+    <!--Main Header-->
+    <header>
+      <h1>Scuba Diving</h1>
+      <!--Page Navigation-->
+      <nav>
+        <ul>
+          <li><strong>Jump To: </strong><a href="#history">History</a> </li>
+          <li><strong>Jump To: </strong><a href="#equipment">Equipment</a> </li>
+          <li><strong>Jump To: </strong><a href="#procedures">Procedures</a> </li>
+          <li><strong>Jump To: </strong><a href="#gallery">Gallery</a></li>
+
+        </ul>
+        <!--End Container-->
+      </nav>
+    </header>
+
+    <!--Intro-->
+    <article class="eight columns">
+      <div id="intro">
+
+        <p>
+          <strong>Scuba diving</strong> is a form of underwater diving in which a diver uses a self contained underwater breathing apparatus (scuba) to breathe underwater.[1]
+          Unlike other modes of diving, which rely either on breath-hold or on air pumped from the surface, scuba divers carry their own source of breathing gas,
+          usually compressed air,[2] allowing them greater freedom of movement than with an air line or diver's umbilical and longer underwater endurance than breath-hold.
+          Scuba equipment may be open circuit, in which exhaled gas is expelled to the surroundings, or a closed or semi-closed circuit rebreather, in which the breathing
+          gas is scrubbed to remove carbon dioxide, and the oxygen used is replenished from a supply of feed gas before being re-breathed.A scuba diver usually moves
+          around underwater by using fins attached to the feet, but external propulsion can be provided by a diver propulsion vehicle, or a sled pulled from the surface.
+        </p>
+        <!--End Container-->
+      </div>
+
+      <!--History-->
+      <div id="history">
+        <h2>History</h2>
+        <p>
+          By the early twentieth century, two basic templates for scuba (self-contained underwater breathing apparatus) had emerged: open-circuit scuba where the diver's
+          exhaust is vented directly into the water, and closed-circuit scuba where the diver's unused oxygen is filtered from the carbon dioxide and recirculated.
+        </p>
+
+        <h3>Rebreathers</h3>
+        <p>
+          The <em>closed-circuit</em> rebreathers were first developed for military use, due to their stealth advantages. The first commercially successful closed-circuit scuba
+          was designed and built by English diving engineer, Henry Fleuss in 1878, while working for Siebe Gorman in London.[3][4] His self contained breathing apparatus
+          consisted of a rubber mask connected to a breathing bag, with (estimated) 50-60% O2 supplied from a copper tank and CO2 scrubbed by rope yarn soaked in a solution
+          of caustic potash; the system giving a duration of about three hours.[4][5] Sir Robert Davis, head of Siebe Gorman, perfected the oxygen rebreather in 1910[4][6]
+          with his invention of the Davis Submerged Escape Apparatus, the first practical rebreather to be made in quantity.[7] Rebreathers have been increasingly used by
+          civilians for recreation, especially since the end of Cold War. This reduced the perceived risk of attack by Communist Bloc forces, including by their combat divers.
+          After that, the world's armed forces had less reason to requisition civilian rebreather patents, and automatic and semi-automatic recreational diving rebreathers started to appear.
+        </p>
+
+        </div>
+      </article>
+    <aside class="three columns">
+      <h2>What kind of equipment do you use?</h2>
+      <form method="post">
+        <label for="first">First name</label>
+        <input class="name" id="first" type="text" name="firstname" placeholder="First name" required>
+        <br>
+        <label class="name" for="last">Last name</label>
+        <input id="last" type="text" name="lastname" placeholder="Last name" required>
+        <br>
+        <label for="gas">Gas type</label>
+        <select id="gas" name="gas">
+          <option id="standard" value="standard">Standard</option>
+          <option id="EAN" value="EAN">EAN</option>
+          <option id="trimix" value="trimix">Trimix</option>
+          <option id="heliox" value="heliox">Heliox</option>
+        </select>
+        <br>
+        <label for="open">Open Circuit</label>
+        <input id="open" type="radio" name="circuit" value="open" checked>
+        <label for="closed">Closed Circuit</label>
+        <input id="closed" type="radio" name="circuit" value="closed">
+        <br>
+        <label for="text">Please Enter Additional Information<br></label>
+        <textarea id="text" name="message" rows="10" cols="30">
+        </textarea>
+        <br>
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email">
+        <br>
+        <button id="Submit" type="button" onclick="alert('Thank you for your entry!')">Submit</button>
+      </form>
+    </aside>
+    <!--End Container-->
+    <footer>
+      <blockquote cite="http://en.wikipedia.org/wiki/Scuba_diving">Courtesy of Wikipedia <a href="http://en.wikipedia.org/wiki/Scuba_diving">Link to Wikipedia</a> </blockquote>
+    </footer>
+    <!--End Container-->
+  </div>
+
+
+
+  <!-- End Document
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

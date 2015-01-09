@@ -1,0 +1,230 @@
+/************MAIN BODY/ CONTAINER************/
+body {
+    background-image: url('../images/diamond-zag.png');
+    background-repeat: repeat;
+    background-position: top;
+    background-attachment: fixed;
+
+}
+
+#container {
+    background-color: #eeeeee;
+    opacity: .85;
+    width: 90%;
+    margin: auto;
+    overflow: auto;
+}
+/************PARAGRAPHS AND HEADINGS************/
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 150%;
+}
+
+article {
+    width: 57%;
+    height: auto;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    float: left;
+}
+
+aside {
+    width: 34%;
+    height: auto;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    float: left;
+    clear: right
+}
+
+footer{
+    float: left;
+    clear: both;
+}
+#gallery {
+    background-color: #2c271f;
+    color: white;
+}
+
+#gallery img {
+    width: 100%;
+    height: auto;
+}
+
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px #434343;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-style: oblique;
+    text-align: left;
+
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: left;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: left;
+}
+
+h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    text-align: left;
+}
+
+/************LINKS/tables/forms************/
+a:link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #b8c1ff;
+
+}
+
+a:visited {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #ff00da;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #ff00da;
+}
+
+
+a:active {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #ff00da;
+    background-color: #fffff9;
+}
+
+#table{
+    width: 100%;
+    padding: 2%;
+}
+
+#table th {
+    font-size: x-large;
+
+}
+#table td {
+    text-align: center;
+    border: groove;
+    border-collapse: inherit;
+}
+
+#table tr {
+    font-size: large;
+}
+
+#table td:hover {
+    background-color: #0000FF;
+    color: azure;
+    letter-spacing: 2px;
+}
+ table > tbody {
+     background-color: #0521f2;
+ }
+
+ tr:nth-child(even) {
+     background-color: white;
+ }
+
+ tr:nth-child(odd) {
+     background-color: #000000;
+     color: white;
+ }
+
+ h2+p {
+     text-indent: 5%;
+ }
+
+h3+p {
+    text-indent: 5%;
+}
+h4+p {
+    text-indent: 5%;
+}
+
+* {
+    border: none;
+}
+
+
+/************Lists************/
+ul {
+    list-style-type: none;
+}
+
+ol{
+    list-style-type: upper-alpha;
+}
+nav li{
+    display: inline;
+    margin-left: 2%;
+    align-content: center;
+
+
+}
+
+#gallery li {
+    background-image: url("../images/1415919752_mask.png");
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding: 2.5%;
+}
+
+@media screen and (max-width: 840px) {
+    aside {
+        display: none;
+    }
+    article {
+        width: 95%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #container {
+        width: 75%;
+    }
+}
