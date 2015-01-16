@@ -1,0 +1,50 @@
+ul li img {
+    width: 100%;
+}
+
+header {
+    background-color: #003f54;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+@media screen and (min-width: 500px) {
+    #button {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    #form {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+    .medium-3.columns {
+        clear: both;
+        width: 100%;
+    }
+    .medium-9.columns {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .orbit-container {
+        overflow: hidden;
+        max-width: 62.5rem;
+        position: relative;
+        background: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
