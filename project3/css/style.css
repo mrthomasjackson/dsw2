@@ -1,0 +1,60 @@
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+    position: relative;
+    top: 2rem;
+    background-color: #008CBA;
+}
+
+main {
+    background: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 60px;
+    height: 100%;
+}
+.row {
+    padding: 1%;
+    background-color: #ffffff;
+}
+
+.custom-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+button {
+    transition-property: background-color;
+}
+
+#transition:active {
+    background-color: green;
+    transition-delay: 100ms;
+    transition-duration: 5s;
+    z-index: 1;
+    transform: scale(10,10);
+}
+
+
+@media screen and (max-width: 720px) {
+    .columns {
+        width: 100%;
+    }
+    .row {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .row {
+        width: 95%;
+        padding: 0.4%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+}
