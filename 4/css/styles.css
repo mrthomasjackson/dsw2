@@ -1,0 +1,133 @@
+body {
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    background-color: #FFFACD;
+    height: auto;
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5em;
+    width: 100%;
+    background-color: #006666;
+    color: #fffacd;
+    z-index: 1;
+}
+
+.right {
+    float: right !important;
+}
+
+.left {
+    float: left !important;
+}
+
+nav {
+
+}
+
+li {
+    display: inline-block;
+}
+
+.aMain {
+    position: absolute;
+    top: 5em;
+    left: 0;
+    right: 0;
+    background-color: #233e47;
+    width: 100%;
+    height: auto;
+}
+
+main {
+    position: relative;
+    background-color: #233e47;
+}
+
+.call-to-action {
+}
+
+.image {
+    position: relative;
+    max-width: 100%; /* for IE 6 */
+}
+
+.box {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+h2 {
+    color: #ffffff;
+
+}
+
+img {
+    display: block;
+}
+
+article {
+
+}
+
+.line {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 62.5rem;
+    border: dashed;
+    height: auto;
+}
+
+.col {
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    float: left; }
+
+.three {
+    width: 25%;
+    position: fixed;
+}
+
+#gallery {
+    width: 100%;
+    clear: both;
+}
+
+@media screen and (max-width: 720px) {
+    .img1 {
+        width: 100%;
+    }
+    h2 {
+        position: static;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    h2 {
+        position: absolute;
+        bottom: 4em;
+        left: 0;
+    }
+    .box {
+        width: 75%;
+    }
+    .img1 {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media screen and (min-width: 1220px) {
+    h2 {
+        left: 3.2em;
+    }
+}

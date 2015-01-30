@@ -1,0 +1,394 @@
+/************MAIN BODY/ CONTAINER************/
+body {
+    background-image: url('../images/diamond-zag.png');
+    background-repeat: repeat;
+    background-position: top;
+    background-attachment: fixed;
+
+}
+
+#container {
+    background-color: #eeeeee;
+    opacity: .85;
+    width: 56.250em;
+    margin-top: 4.063em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4.063em;
+    background-color: #000000;
+    color: #ffffff;
+    z-index: 1;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+}
+
+.cta {
+    top: 4.063em;
+    position: relative;
+    width: 56.250em;
+    height: 18.750em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/************PARAGRAPHS AND HEADINGS************/
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.top {
+    position: fixed;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 150%;
+}
+
+article {
+    width: 93.75%;
+    height: auto;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    float: left;
+    clear: both;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0.125em 0.125em #434343;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-style: oblique;
+    text-align: left;
+
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: left;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: left;
+}
+
+h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    text-align: left;
+}
+
+/************LINKS/tables/forms************/
+a:link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #b8c1ff;
+
+}
+
+a:visited {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #ff00da;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #ff00da;
+}
+
+
+a:active {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #ff00da;
+    background-color: #fffff9;
+}
+
+#table{
+    width: 100%;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+}
+
+#table th {
+    font-size: x-large;
+
+}
+#table td {
+    text-align: center;
+    border: groove;
+    border-collapse: inherit;
+}
+
+#table tr {
+    font-size: large;
+}
+
+#table td:hover {
+    background-color: #0000FF;
+    color: azure;
+    letter-spacing: 0.125em;
+}
+ table > tbody {
+     background-color: #0521f2;
+ }
+
+ tr:nth-child(even) {
+     background-color: white;
+ }
+
+ tr:nth-child(odd) {
+     background-color: #000000;
+     color: white;
+ }
+
+ h2+p {
+     text-indent: 0.9375rem;
+ }
+
+h3+p {
+    text-indent: 0.9375rem;
+}
+h4+p {
+    text-indent: 0.9375rem;
+}
+
+* {
+    border: none;
+}
+
+
+/************Lists************/
+ul {
+    list-style-type: none;
+}
+
+nav li{
+    display: inline;
+    margin-left: 0.9375rem;
+}
+ /******MEDIAQUEIRES*****/
+@media screen and (max-width: 705px) {
+    header {
+        height: 9.375em;
+        overflow: visible;
+    }
+    .cta {
+        top: 9.375em;
+        position: relative;
+    }
+    #container {
+        margin-top: 9.375em;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    #container {
+        width: 100%;
+    }
+    .cta {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+}
+
+/**Slider**/
+
+.slides {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+    width: 100%;
+    bottom: 9px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+
+.nav-dots .nav-dot {
+    top: -5px;
+    width: 11px;
+    height: 11px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/******FORMS and video******/
+iframe {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#contact-area {
+    width: 100%;
+    margin-top: 1.563em;
+}
+
+#contact-area input, #contact-area textarea {
+    padding: 0.313em;
+    width: 78.5%;
+
+    font-size: 1.4em;
+    margin: 0 0 1.666667em 0;
+    border: 2px solid #ccc;
+}
+
+#contact-area textarea {
+    height: 5.625em;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+    border: 2px solid #900;
+}
+
+#contact-area input.submit-button {
+    width: 100px;
+    float: right;
+}
+
+label {
+    float: left;
+    text-align: right;
+    margin-right: 2.5%;
+    width: 100px;
+    padding-top: 5px;
+    font-size: 1.4em;
+}
+#clear {
+    clear: both;
+}
